@@ -9,5 +9,5 @@ add_action("wp_enqueue_scripts", "easv_register_resources");
 function easv_register_menu() {
     register_nav_menu("main-menu", "Main menu");
 }
-add_action("init", "east_register_menu");
+add_action("init", "easv_register_menu");
 ?>
