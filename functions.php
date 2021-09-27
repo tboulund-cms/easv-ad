@@ -5,4 +5,9 @@ function easv_register_resources() {
     wp_enqueue_script("bootstrap", "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js");
 }
 add_action("wp_enqueue_scripts", "easv_register_resources");
+
+function easv_register_menu() {
+    register_nav_menu("main-menu", "Main menu");
+}
+add_action("init", "east_register_menu");
 ?>
